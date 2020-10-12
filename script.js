@@ -36,6 +36,7 @@ let computerScoreNr=0;
 function resetSelected(){
   allGameIcons.forEach((icon) => {
     icon.classList.remove('selected');
+    icon.classList.remove('scaled');
   });
   stopConfetti();
   removeConfetti();
@@ -101,23 +102,23 @@ function displayComputerChoice() {
   //checkResult();
   switch(computerChoice) {
     case 'rock' :
-      computerRock.classList.add('selected');
+      computerRock.classList.add('selected', 'scaled');
       computerChoiceEL.textContent = ' --- Rock';
       break;
     case 'scissors' :
-      computerScissors.classList.add('selected');
+      computerScissors.classList.add('selected', 'scaled');
       computerChoiceEL.textContent = ' --- Scissors';
       break;
     case 'paper' :
-      computerPaper.classList.add('selected');
+      computerPaper.classList.add('selected', 'scaled');
       computerChoiceEL.textContent = ' --- Paper';
       break;
     case 'lizard' :
-      computerLizard.classList.add('selected');
+      computerLizard.classList.add('selected', 'scaled');
       computerChoiceEL.textContent = ' --- Lizard';
       break;
     case 'spock' :
-      computerSpock.classList.add('selected');
+      computerSpock.classList.add('selected', 'scaled');
       computerChoiceEL.textContent = ' --- Spock';
       break;
     default:
@@ -131,23 +132,23 @@ function select(playerChoice) {
   // add selected styleing & playerChoice
   switch(playerChoice) {
     case 'rock' :
-      playerRock.classList.add('selected');
+      playerRock.classList.add('selected', 'scaled');
       playerChoiceEL.textContent = ' --- Rock';
       break;
     case 'scissors' :
-      playerScissors.classList.add('selected');
+      playerScissors.classList.add('selected', 'scaled');
       playerChoiceEL.textContent = ' --- Scissors';
       break;
     case 'paper' :
-      playerPaper.classList.add('selected');
+      playerPaper.classList.add('selected', 'scaled');
       playerChoiceEL.textContent = ' --- Paper';
       break;
     case 'lizard' :
-      playerLizard.classList.add('selected');
+      playerLizard.classList.add('selected', 'scaled');
       playerChoiceEL.textContent = ' --- Lizard';
       break;
     case 'spock' :
-      playerSpock.classList.add('selected');
+      playerSpock.classList.add('selected', 'scaled');
       playerChoiceEL.textContent = ' --- Spock';
       break;
     default:

@@ -77,6 +77,10 @@ h2 {
   color: black !important;
 }
 
+.scaled {
+  transform: scale(1.5); /* */
+}
+
 .reset-icon {
   font-size: 30px;
   cursor: pointer;
