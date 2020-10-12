@@ -81,7 +81,7 @@ function updateScore(playerChoice) {
       playerScoreNr++;
       playerScoreEl.textContent = playerScoreNr;
     } else {
-      resultText.textContent = "You Lost!  &#128549";
+      resultText.textContent = "You Lost!  " + String.fromCodePoint(0x1F625);
       computerScoreNr++;
       computerScoreEl.textContent = computerScoreNr;
     }
